@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camil Curro · Portfolio</title>
+<meta name="description" content="Portfolio de Camil Emanuel Curro Morales, estudiante de 1.º de SMR: informática, programación y ciberseguridad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#inicio">Camil Curro</a>
+  <nav><a href="#sobre-mi">Sobre mí</a><a href="#curriculum">Currículum</a><a href="#proyectos">Proyectos</a><a href="#habilidades">Habilidades</a><a href="#contacto">Contacto</a></nav>
+</header>
+<main>
+<section id="inicio" class="hero">
+  <div>
+    <h1>Camil Emanuel<br>Curro Morales</h1>
+    <p class="lead">Estudiante de 1.º de SMR (Sistemas Microinformáticos y Redes). Me gustan los ordenadores por dentro, la programación y la ciberseguridad.</p>
+    <p class="cta"><a class="btn" href="#contacto">Contactar</a> <a class="btn ghost" href="Camil_Curro_CV.pdf" download>Descargar CV (PDF)</a></p>
+  </div>
+  <div class="term" aria-label="Resumen en formato terminal">
+    <div class="bar"><i></i><i></i><i></i></div>
+    <pre id="term" data-lines='["$ whoami","camil · estudiante SMR","$ intereses --lista","hardware, programación, ciberseguridad","$ estado","buscando mi primera oportunidad"]'></pre>
+  </div>
+</section>
+
+<section id="sobre-mi">
+  <h2>Sobre mí</h2>
+  <div class="two">
+    <p>Soy estudiante de primer curso de Sistemas Microinformáticos y Redes en el Colegio San Juan Bosco, en Las Palmas de Gran Canaria. Disfruto montando y mejorando equipos, y cada día aprendo algo nuevo sobre redes, programación y seguridad informática.</p>
+    <p>Fuera de clase juego al fútbol, que me ha enseñado a trabajar en equipo, y me gustan los videojuegos. Busco mi primera oportunidad laboral para aprender, aportar lo que sé y crecer en el sector.</p>
+  </div>
+</section>
+
+<section id="curriculum">
+  <h2>Currículum</h2>
+  <div class="cv">
+    <article><h3>Perfil</h3><p>Estudiante de 1.º de SMR con interés en informática, componentes de ordenador, programación y ciberseguridad. Responsable, organizado y con ganas de aprender.</p></article>
+    <article><h3>Educación</h3><p class="when">2026 – 2027</p><p><strong>1.º de SMR</strong><br>Colegio San Juan Bosco, Las Palmas de Gran Canaria</p></article>
+    <article><h3>Experiencia laboral</h3><p>Todavía no tengo experiencia laboral. Busco mi primera oportunidad para empezar a ganarla.</p></article>
+    <article><h3>Idiomas</h3><ul class="plain"><li><strong>Español</strong> nativo</li><li><strong>Inglés</strong> intermedio</li></ul></article>
+  </div>
+  <p><a class="btn ghost" href="Camil_Curro_CV.pdf" download>Descargar CV (PDF)</a></p>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+  <div class="cards">
+    <article class="card"><span class="tag ok">Publicado</span><h3>Este portfolio</h3><p>Diseñado con HTML, CSS y JavaScript. Mi primer paso para enseñar lo que hago.</p></article>
+    <article class="card"><span class="tag">En preparación</span><h3>Guía de componentes de PC</h3><p>Qué hace cada pieza de un ordenador y cómo mejorar su rendimiento.</p></article>
+    <article class="card"><span class="tag">En preparación</span><h3>Mi primera red local</h3><p>Montaje y configuración básica de una red doméstica con documentación paso a paso.</p></article>
+  </div>
+</section>
+
+<section id="habilidades">
+  <h2>Habilidades y herramientas</h2>
+  <div class="two">
+    <div><h3>Habilidades</h3><ul class="chips"><li>Trabajo en equipo</li><li>Organización</li><li>Responsabilidad</li><li>Ganas de aprender</li></ul></div>
+    <div><h3>Herramientas</h3><ul class="chips"><li>Paquete ofimático</li><li>Redes locales (básico)</li><li>Montaje y mantenimiento de equipos (básico)</li></ul></div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Escríbeme y te respondo lo antes posible.</p>
+  <form id="form">
+    <label>Nombre<input name="nombre" required autocomplete="name"></label>
+    <label>Tu email<input name="email" type="email" required autocomplete="email"></label>
+    <label>Mensaje<textarea name="mensaje" rows="5" required></textarea></label>
+    <button class="btn" type="submit">Enviar mensaje</button>
+    <p id="msg" role="status"></p>
+  </form>
+  <p class="small">También puedes escribirme a <a href="mailto:camil.curro@salesianaslpsjb.es">camil.curro@salesianaslpsjb.es</a>. Las Palmas de Gran Canaria.</p>
+</section>
+</main>
+<footer><p>© 2026 Camil Emanuel Curro Morales</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+:root{--bg:#f4f6f9;--surface:#fff;--ink:#101b2d;--mute:#56627a;--line:#dbe1ea;--accent:#1f5eff;--accent-ink:#fff;--term:#101b2d;--term-ink:#d8e4ff;--ok:#0c7a4d;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1522;--surface:#16202f;--ink:#eaf0fb;--mute:#9aa7bd;--line:#26324a;--accent:#6c9bff;--accent-ink:#0e1522;--term:#0a101b;--ok:#4fd39a;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3,.brand{font-family:"Bricolage Grotesque","Segoe UI",sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent)}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:.9rem clamp(1rem,5vw,4rem);background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.brand{font-weight:800;font-size:1.2rem;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:1.2rem;flex-wrap:wrap}nav a{color:var(--mute);text-decoration:none;font-weight:500}nav a:hover{color:var(--accent)}
+main{max-width:1080px;margin:0 auto;padding:0 clamp(1rem,5vw,2rem)}
+section{padding:4.5rem 0 1rem}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:1.5rem}
+h3{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center;padding-top:4rem}
+h1{font-size:clamp(2.6rem,7vw,4.8rem);font-weight:800;letter-spacing:-.02em}
+.lead{font-size:1.2rem;color:var(--mute);max-width:34rem;margin:1.4rem 0}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);border:2px solid var(--accent);padding:.7rem 1.3rem;border-radius:8px;font:500 1rem "IBM Plex Sans",sans-serif;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent)}.btn:hover{filter:brightness(1.08)}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.term{background:var(--term);border-radius:12px;overflow:hidden;box-shadow:0 18px 40px -20px rgba(16,27,45,.5)}
+.bar{display:flex;gap:6px;padding:.7rem 1rem;border-bottom:1px solid #26324a}.bar i{width:11px;height:11px;border-radius:50%;background:#3a4864}
+pre{margin:0;padding:1.2rem 1.2rem 1.6rem;min-height:11rem;color:var(--term-ink);font:.95rem/1.8 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}.two p{margin:0;max-width:34rem}
+.cv{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem}
+.cv article,.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.cv p{margin:.3rem 0}.when{color:var(--accent);font-weight:500}
+.plain{list-style:none;margin:0;padding:0}.plain li{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:.4rem 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}.card p{margin:0;color:var(--mute)}
+.tag{display:inline-block;font-size:.85rem;border:1px solid var(--line);color:var(--mute);border-radius:99px;padding:.1rem .7rem;margin-bottom:.8rem}.tag.ok{color:var(--ok);border-color:var(--ok)}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:0}.chips li{background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:.35rem .9rem}
+form{display:grid;gap:1rem;max-width:34rem;margin:1.2rem 0}label{display:grid;gap:.3rem;font-weight:500}
+input,textarea{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.7rem .9rem}
+form .btn{justify-self:start}#msg{margin:0;color:var(--ok);min-height:1.5rem}.small{color:var(--mute);font-size:.95rem}
+footer{margin-top:4rem;padding:2rem;text-align:center;color:var(--mute);border-top:1px solid var(--line)}footer p{margin:0}
+@media (max-width:760px){.hero,.two,.cv{grid-template-columns:1fr}.hero{gap:2rem}section{padding-top:3.5rem}}
